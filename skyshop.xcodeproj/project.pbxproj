@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F0DB4C8256EC56E00232742 /* skyshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB4C7256EC56E00232742 /* skyshopApp.swift */; };
+		6F0DB4CA256EC56E00232742 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB4C9256EC56E00232742 /* ContentView.swift */; };
+		6F0DB4CC256EC57000232742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB4CB256EC57000232742 /* Assets.xcassets */; };
+		6F0DB4CF256EC57000232742 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB4CE256EC57000232742 /* Preview Assets.xcassets */; };
+		6F0DB4DA256EC57000232742 /* skyshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB4D9256EC57000232742 /* skyshopTests.swift */; };
+		6F0DB4E5256EC57000232742 /* skyshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB4E4256EC57000232742 /* skyshopUITests.swift */; };
+		6F0DB4F6256EC66F00232742 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB4F5256EC66F00232742 /* Color+Hex.swift */; };
+		6F0DB4FB256EC6D700232742 /* PinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB4FA256EC6D700232742 /* PinkModel.swift */; };
+		6F0DB503256EC85B00232742 /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB502256EC85B00232742 /* Color+AppColors.swift */; };
+		6F0DB510256ECD0C00232742 /* Pink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB50F256ECD0C00232742 /* Pink.swift */; };
+		6F0DB518256ED32F00232742 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB517256ED32F00232742 /* View+If.swift */; };
+		6F0DB525256EE3D500232742 /* HexColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB524256EE3D500232742 /* HexColorPicker.swift */; };
+		6F0DB52A256EEAE400232742 /* PinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB529256EEAE400232742 /* PinkDetail.swift */; };
+		6F0DB52F256EF28E00232742 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB52E256EF28E00232742 /* DataModel.swift */; };
+		6F0DB53C256F0A0E00232742 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB53B256F0A0E00232742 /* AudioModel.swift */; };
+		6F0DB541256F0AF500232742 /* bgloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB540256F0AF500232742 /* bgloop.wav */; };
+		6F0DB5B4256F568300232742 /* F4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB5AC256F568300232742 /* F4.wav */; };
+		6F0DB5B5256F568300232742 /* G2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB5AD256F568300232742 /* G2.wav */; };
+		6F0DB5B6256F568300232742 /* G4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB5AE256F568300232742 /* G4.wav */; };
+		6F0DB5B7256F568300232742 /* C3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB5AF256F568300232742 /* C3.wav */; };
+		6F0DB5B8256F568300232742 /* D#3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB5B0256F568300232742 /* D#3.wav */; };
+		6F0DB5B9256F568300232742 /* D4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB5B1256F568300232742 /* D4.wav */; };
+		6F0DB5BB256F568300232742 /* A#3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F0DB5B3256F568300232742 /* A#3.wav */; };
+		6F0DB5C32570303D00232742 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB5C22570303D00232742 /* PhotoModel.swift */; };
+		6F0DB5D02570332000232742 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB5CF2570332000232742 /* ActivityViewController.swift */; };
+		6F0DB5D5257033CF00232742 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB5D4257033CF00232742 /* UIImage+Color.swift */; };
+		6F0DB5DD2571543F00232742 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB5DC2571543F00232742 /* UIImageColors.swift */; };
+		6F0DB5E2257154F300232742 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB5E1257154F300232742 /* ImagePicker.swift */; };
+		6F0DB5E725715ABE00232742 /* NewPinkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB5E625715ABE00232742 /* NewPinkSheet.swift */; };
+		6F0DB5EC2571604900232742 /* UIColor+toHexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB5EB2571604900232742 /* UIColor+toHexString.swift */; };
+		6F0DB619257194AE00232742 /* PinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB618257194AE00232742 /* PinkRow.swift */; };
+		6F0DB62325719CC000232742 /* ColorPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB62225719CC000232742 /* ColorPickerButton.swift */; };
+		6F0DB6282571A32A00232742 /* Color+toHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB6272571A32A00232742 /* Color+toHex.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F0DB4D6256EC57000232742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F0DB4BC256EC56E00232742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F0DB4C3256EC56E00232742;
+			remoteInfo = skyshop;
+		};
+		6F0DB4E1256EC57000232742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F0DB4BC256EC56E00232742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F0DB4C3256EC56E00232742;
+			remoteInfo = skyshop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F0DB4C4256EC56E00232742 /* skyshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skyshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0DB4C7256EC56E00232742 /* skyshopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyshopApp.swift; sourceTree = "<group>"; };
+		6F0DB4C9256EC56E00232742 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6F0DB4CB256EC57000232742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F0DB4CE256EC57000232742 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F0DB4D0256EC57000232742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0DB4D5256EC57000232742 /* skyshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skyshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0DB4D9256EC57000232742 /* skyshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyshopTests.swift; sourceTree = "<group>"; };
+		6F0DB4DB256EC57000232742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0DB4E0256EC57000232742 /* skyshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skyshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0DB4E4256EC57000232742 /* skyshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyshopUITests.swift; sourceTree = "<group>"; };
+		6F0DB4E6256EC57000232742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0DB4F5256EC66F00232742 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		6F0DB4FA256EC6D700232742 /* PinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkModel.swift; sourceTree = "<group>"; };
+		6F0DB502256EC85B00232742 /* Color+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColors.swift"; sourceTree = "<group>"; };
+		6F0DB50F256ECD0C00232742 /* Pink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pink.swift; sourceTree = "<group>"; };
+		6F0DB517256ED32F00232742 /* View+If.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+If.swift"; sourceTree = "<group>"; };
+		6F0DB524256EE3D500232742 /* HexColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorPicker.swift; sourceTree = "<group>"; };
+		6F0DB529256EEAE400232742 /* PinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkDetail.swift; sourceTree = "<group>"; };
+		6F0DB52E256EF28E00232742 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		6F0DB53B256F0A0E00232742 /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
+		6F0DB540256F0AF500232742 /* bgloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bgloop.wav; sourceTree = "<group>"; };
+		6F0DB5AC256F568300232742 /* F4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F4.wav; sourceTree = "<group>"; };
+		6F0DB5AD256F568300232742 /* G2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G2.wav; sourceTree = "<group>"; };
+		6F0DB5AE256F568300232742 /* G4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G4.wav; sourceTree = "<group>"; };
+		6F0DB5AF256F568300232742 /* C3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C3.wav; sourceTree = "<group>"; };
+		6F0DB5B0256F568300232742 /* D#3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "D#3.wav"; sourceTree = "<group>"; };
+		6F0DB5B1256F568300232742 /* D4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D4.wav; sourceTree = "<group>"; };
+		6F0DB5B3256F568300232742 /* A#3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "A#3.wav"; sourceTree = "<group>"; };
+		6F0DB5C22570303D00232742 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		6F0DB5CF2570332000232742 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		6F0DB5D4257033CF00232742 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		6F0DB5DC2571543F00232742 /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
+		6F0DB5E1257154F300232742 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		6F0DB5E625715ABE00232742 /* NewPinkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPinkSheet.swift; sourceTree = "<group>"; };
+		6F0DB5EB2571604900232742 /* UIColor+toHexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+toHexString.swift"; sourceTree = "<group>"; };
+		6F0DB618257194AE00232742 /* PinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkRow.swift; sourceTree = "<group>"; };
+		6F0DB62225719CC000232742 /* ColorPickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerButton.swift; sourceTree = "<group>"; };
+		6F0DB6272571A32A00232742 /* Color+toHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+toHex.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F0DB4C1256EC56E00232742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0DB4D2256EC57000232742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0DB4DD256EC57000232742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F0DB4BB256EC56E00232742 = {
+			isa = PBXGroup;
+			children = (
+				6F0DB6272571A32A00232742 /* Color+toHex.swift */,
+				6F0DB62225719CC000232742 /* ColorPickerButton.swift */,
+				6F0DB4C6256EC56E00232742 /* skyshop */,
+				6F0DB4D8256EC57000232742 /* skyshopTests */,
+				6F0DB4E3256EC57000232742 /* skyshopUITests */,
+				6F0DB4C5256EC56E00232742 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F0DB4C5256EC56E00232742 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB4C4256EC56E00232742 /* skyshop.app */,
+				6F0DB4D5256EC57000232742 /* skyshopTests.xctest */,
+				6F0DB4E0256EC57000232742 /* skyshopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F0DB4C6256EC56E00232742 /* skyshop */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB4C7256EC56E00232742 /* skyshopApp.swift */,
+				6F0DB5F82571619800232742 /* Audio */,
+				6F0DB60E2571620900232742 /* Views */,
+				6F0DB5F02571616000232742 /* Extensions */,
+				6F0DB5F9257161AF00232742 /* Model */,
+				6F0DB60A257161FF00232742 /* Structs */,
+				6F0DB4CB256EC57000232742 /* Assets.xcassets */,
+				6F0DB4D0256EC57000232742 /* Info.plist */,
+				6F0DB4CD256EC57000232742 /* Preview Content */,
+			);
+			path = skyshop;
+			sourceTree = "<group>";
+		};
+		6F0DB4CD256EC57000232742 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB4CE256EC57000232742 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6F0DB4D8256EC57000232742 /* skyshopTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB4D9256EC57000232742 /* skyshopTests.swift */,
+				6F0DB4DB256EC57000232742 /* Info.plist */,
+			);
+			path = skyshopTests;
+			sourceTree = "<group>";
+		};
+		6F0DB4E3256EC57000232742 /* skyshopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB4E4256EC57000232742 /* skyshopUITests.swift */,
+				6F0DB4E6256EC57000232742 /* Info.plist */,
+			);
+			path = skyshopUITests;
+			sourceTree = "<group>";
+		};
+		6F0DB5AB256F568300232742 /* notes */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB5AC256F568300232742 /* F4.wav */,
+				6F0DB5AD256F568300232742 /* G2.wav */,
+				6F0DB5AE256F568300232742 /* G4.wav */,
+				6F0DB5AF256F568300232742 /* C3.wav */,
+				6F0DB5B0256F568300232742 /* D#3.wav */,
+				6F0DB5B1256F568300232742 /* D4.wav */,
+				6F0DB5B3256F568300232742 /* A#3.wav */,
+			);
+			path = notes;
+			sourceTree = "<group>";
+		};
+		6F0DB5F02571616000232742 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB4F5256EC66F00232742 /* Color+Hex.swift */,
+				6F0DB502256EC85B00232742 /* Color+AppColors.swift */,
+				6F0DB5EB2571604900232742 /* UIColor+toHexString.swift */,
+				6F0DB5D4257033CF00232742 /* UIImage+Color.swift */,
+				6F0DB517256ED32F00232742 /* View+If.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6F0DB5F42571617600232742 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB5CF2570332000232742 /* ActivityViewController.swift */,
+				6F0DB5DC2571543F00232742 /* UIImageColors.swift */,
+				6F0DB5E1257154F300232742 /* ImagePicker.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		6F0DB5F82571619800232742 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB5AB256F568300232742 /* notes */,
+				6F0DB540256F0AF500232742 /* bgloop.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		6F0DB5F9257161AF00232742 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB53B256F0A0E00232742 /* AudioModel.swift */,
+				6F0DB4FA256EC6D700232742 /* PinkModel.swift */,
+				6F0DB5C22570303D00232742 /* PhotoModel.swift */,
+				6F0DB52E256EF28E00232742 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F0DB603257161DD00232742 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB524256EE3D500232742 /* HexColorPicker.swift */,
+				6F0DB4C9256EC56E00232742 /* ContentView.swift */,
+				6F0DB618257194AE00232742 /* PinkRow.swift */,
+				6F0DB5E625715ABE00232742 /* NewPinkSheet.swift */,
+				6F0DB529256EEAE400232742 /* PinkDetail.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		6F0DB60A257161FF00232742 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB50F256ECD0C00232742 /* Pink.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		6F0DB60E2571620900232742 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DB5F42571617600232742 /* UIKit */,
+				6F0DB603257161DD00232742 /* SwiftUI */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F0DB4C3256EC56E00232742 /* skyshop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0DB4E9256EC57000232742 /* Build configuration list for PBXNativeTarget "skyshop" */;
+			buildPhases = (
+				6F0DB4C0256EC56E00232742 /* Sources */,
+				6F0DB4C1256EC56E00232742 /* Frameworks */,
+				6F0DB4C2256EC56E00232742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = skyshop;
+			productName = skyshop;
+			productReference = 6F0DB4C4256EC56E00232742 /* skyshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F0DB4D4256EC57000232742 /* skyshopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0DB4EC256EC57000232742 /* Build configuration list for PBXNativeTarget "skyshopTests" */;
+			buildPhases = (
+				6F0DB4D1256EC57000232742 /* Sources */,
+				6F0DB4D2256EC57000232742 /* Frameworks */,
+				6F0DB4D3256EC57000232742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F0DB4D7256EC57000232742 /* PBXTargetDependency */,
+			);
+			name = skyshopTests;
+			productName = skyshopTests;
+			productReference = 6F0DB4D5256EC57000232742 /* skyshopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F0DB4DF256EC57000232742 /* skyshopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0DB4EF256EC57000232742 /* Build configuration list for PBXNativeTarget "skyshopUITests" */;
+			buildPhases = (
+				6F0DB4DC256EC57000232742 /* Sources */,
+				6F0DB4DD256EC57000232742 /* Frameworks */,
+				6F0DB4DE256EC57000232742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F0DB4E2256EC57000232742 /* PBXTargetDependency */,
+			);
+			name = skyshopUITests;
+			productName = skyshopUITests;
+			productReference = 6F0DB4E0256EC57000232742 /* skyshopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F0DB4BC256EC56E00232742 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					6F0DB4C3256EC56E00232742 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					6F0DB4D4256EC57000232742 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6F0DB4C3256EC56E00232742;
+					};
+					6F0DB4DF256EC57000232742 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6F0DB4C3256EC56E00232742;
+					};
+				};
+			};
+			buildConfigurationList = 6F0DB4BF256EC56E00232742 /* Build configuration list for PBXProject "skyshop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F0DB4BB256EC56E00232742;
+			productRefGroup = 6F0DB4C5256EC56E00232742 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F0DB4C3256EC56E00232742 /* skyshop */,
+				6F0DB4D4256EC57000232742 /* skyshopTests */,
+				6F0DB4DF256EC57000232742 /* skyshopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F0DB4C2256EC56E00232742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0DB5B7256F568300232742 /* C3.wav in Resources */,
+				6F0DB5B5256F568300232742 /* G2.wav in Resources */,
+				6F0DB5B4256F568300232742 /* F4.wav in Resources */,
+				6F0DB5B9256F568300232742 /* D4.wav in Resources */,
+				6F0DB4CF256EC57000232742 /* Preview Assets.xcassets in Resources */,
+				6F0DB5B6256F568300232742 /* G4.wav in Resources */,
+				6F0DB5B8256F568300232742 /* D#3.wav in Resources */,
+				6F0DB4CC256EC57000232742 /* Assets.xcassets in Resources */,
+				6F0DB5BB256F568300232742 /* A#3.wav in Resources */,
+				6F0DB541256F0AF500232742 /* bgloop.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0DB4D3256EC57000232742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0DB4DE256EC57000232742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F0DB4C0256EC56E00232742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0DB62325719CC000232742 /* ColorPickerButton.swift in Sources */,
+				6F0DB4CA256EC56E00232742 /* ContentView.swift in Sources */,
+				6F0DB6282571A32A00232742 /* Color+toHex.swift in Sources */,
+				6F0DB5EC2571604900232742 /* UIColor+toHexString.swift in Sources */,
+				6F0DB5DD2571543F00232742 /* UIImageColors.swift in Sources */,
+				6F0DB525256EE3D500232742 /* HexColorPicker.swift in Sources */,
+				6F0DB5E2257154F300232742 /* ImagePicker.swift in Sources */,
+				6F0DB5D5257033CF00232742 /* UIImage+Color.swift in Sources */,
+				6F0DB5E725715ABE00232742 /* NewPinkSheet.swift in Sources */,
+				6F0DB53C256F0A0E00232742 /* AudioModel.swift in Sources */,
+				6F0DB4C8256EC56E00232742 /* skyshopApp.swift in Sources */,
+				6F0DB4FB256EC6D700232742 /* PinkModel.swift in Sources */,
+				6F0DB518256ED32F00232742 /* View+If.swift in Sources */,
+				6F0DB52F256EF28E00232742 /* DataModel.swift in Sources */,
+				6F0DB52A256EEAE400232742 /* PinkDetail.swift in Sources */,
+				6F0DB510256ECD0C00232742 /* Pink.swift in Sources */,
+				6F0DB4F6256EC66F00232742 /* Color+Hex.swift in Sources */,
+				6F0DB503256EC85B00232742 /* Color+AppColors.swift in Sources */,
+				6F0DB5D02570332000232742 /* ActivityViewController.swift in Sources */,
+				6F0DB5C32570303D00232742 /* PhotoModel.swift in Sources */,
+				6F0DB619257194AE00232742 /* PinkRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0DB4D1256EC57000232742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0DB4DA256EC57000232742 /* skyshopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0DB4DC256EC57000232742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0DB4E5256EC57000232742 /* skyshopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F0DB4D7256EC57000232742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F0DB4C3256EC56E00232742 /* skyshop */;
+			targetProxy = 6F0DB4D6256EC57000232742 /* PBXContainerItemProxy */;
+		};
+		6F0DB4E2256EC57000232742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F0DB4C3256EC56E00232742 /* skyshop */;
+			targetProxy = 6F0DB4E1256EC57000232742 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F0DB4E7256EC57000232742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F0DB4E8256EC57000232742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F0DB4EA256EC57000232742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"skyshop/Preview Content\"";
+				DEVELOPMENT_TEAM = KUV9DN7K8X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = skyshop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claytonsulby.skyshop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F0DB4EB256EC57000232742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"skyshop/Preview Content\"";
+				DEVELOPMENT_TEAM = KUV9DN7K8X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = skyshop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claytonsulby.skyshop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F0DB4ED256EC57000232742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = skyshopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claytonsulby.skyshopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skyshop.app/skyshop";
+			};
+			name = Debug;
+		};
+		6F0DB4EE256EC57000232742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = skyshopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claytonsulby.skyshopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skyshop.app/skyshop";
+			};
+			name = Release;
+		};
+		6F0DB4F0256EC57000232742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = skyshopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claytonsulby.skyshopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = skyshop;
+			};
+			name = Debug;
+		};
+		6F0DB4F1256EC57000232742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = skyshopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claytonsulby.skyshopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = skyshop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F0DB4BF256EC56E00232742 /* Build configuration list for PBXProject "skyshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0DB4E7256EC57000232742 /* Debug */,
+				6F0DB4E8256EC57000232742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0DB4E9256EC57000232742 /* Build configuration list for PBXNativeTarget "skyshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0DB4EA256EC57000232742 /* Debug */,
+				6F0DB4EB256EC57000232742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0DB4EC256EC57000232742 /* Build configuration list for PBXNativeTarget "skyshopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0DB4ED256EC57000232742 /* Debug */,
+				6F0DB4EE256EC57000232742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0DB4EF256EC57000232742 /* Build configuration list for PBXNativeTarget "skyshopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0DB4F0256EC57000232742 /* Debug */,
+				6F0DB4F1256EC57000232742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F0DB4BC256EC56E00232742 /* Project object */;
+}
