@@ -24,41 +24,63 @@ class PinkModel : ObservableObject {
         currentColor = .pink
     }
     
-    func addPink(name: String, hex:String) {
+    func addPink(name: String, hex:String, url: URL?) {
         
         var name:String = name
         var hex:String = hex
         
-        if name == "" {
-            name = "Unnamed Pink"
-        }
+        if name == "" { name = "Unnamed Pink" }
+        if hex == "" || hex == "000000" { hex = self.currentColor.hex }
         
-        if hex == "" {
-            hex = "000000"
-        }
+        let existingHexValues = pinks.map({ (pink) -> String in return pink.hex })
+        let existingPinkNames = pinks.map({ (pink) -> String in return pink.name })
         
-        let hexs = pinks.map({ (pink) -> String in
-            return pink.hex
-        })
-        
-        let names = pinks.map({ (pink) -> String in
-            return pink.name
-        })
-        
-        if hexs.contains(hex) {
-            
-            let index = self.pinks.firstIndex(where: { $0.hex == hex })!
-            self.pinks[index].newHex(hex)
-            
-        } else if names.contains(name){
+        if url == nil {
+            if existingHexValues.contains(hex) {
+                
+                let existingPink = self.pinks.first(where: { $0.hex == hex } )!
+                self.pinks.removeAll(where: { $0.hex == hex })
+                self.pinks.append(Pink(name: name, hex: existingPink.hex))
 
-            let index = self.pinks.firstIndex(where: { $0.name == name })!
-            self.pinks[index].newName(name)
-            
-        } else if names.contains(name) && hexs.contains(hex) {
-            //do nothing
+                
+            } else if existingPinkNames.contains(name){
+                
+                let existingPink = self.pinks.first(where: { $0.name == name } )!
+                self.pinks.removeAll(where: { $0.name == name })
+                self.pinks.append(Pink(name: existingPink.name, hex: hex))
+                
+            } else if existingPinkNames.contains(name) && existingHexValues.contains(hex) {
+
+                let existingPink = self.pinks.first(where: { $0.name == name && $0.hex == hex } )!
+                self.pinks.removeAll(where: { $0.name == name && $0.hex == hex })
+                self.pinks.append(Pink(name: existingPink.name, hex: existingPink.hex))
+                
+            } else {
+                self.pinks.append(Pink(name: name, hex: hex))
+            }
         } else {
-            self.pinks.append(Pink(name: name, hex: hex))
+            if existingHexValues.contains(hex) {
+                
+                let existingPink = self.pinks.first(where: { $0.hex == hex } )!
+                self.pinks.removeAll(where: { $0.hex == hex })
+                self.pinks.append(Pink(name: name, hex: existingPink.hex, imageURL: url))
+
+                
+            } else if existingPinkNames.contains(name){
+                
+                let existingPink = self.pinks.first(where: { $0.name == name } )!
+                self.pinks.removeAll(where: { $0.name == name })
+                self.pinks.append(Pink(name: existingPink.name, hex: hex, imageURL: url))
+                
+            } else if existingPinkNames.contains(name) && existingHexValues.contains(hex) {
+
+                let existingPink = self.pinks.first(where: { $0.name == name && $0.hex == hex } )!
+                self.pinks.removeAll(where: { $0.name == name && $0.hex == hex })
+                self.pinks.append(Pink(name: existingPink.name, hex: existingPink.hex, imageURL: url))
+                
+            } else {
+                self.pinks.append(Pink(name: name, hex: hex, imageURL: url))
+            }
         }
     }
     
@@ -95,5 +117,26 @@ class PinkModel : ObservableObject {
     
     func resetPinks() {
         self.pinks = dataModel.corePinks
+    }
+    
+    func addToDocuments(name: String, image: UIImage) -> URL? {
+        // get the documents directory url
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        // choose a name for your image
+        let fileName = "\(name).jpg"
+        // create the destination file url to save your image
+        let fileURL = documentsDirectory.appendingPathComponent(fileName)
+        // get your UIImage jpeg data representation and check if the destination file url already exists
+        if let data = image.jpegData(compressionQuality:  1.0),
+          !FileManager.default.fileExists(atPath: fileURL.path) {
+            do {
+                // writes the image data to disk
+                try data.write(to: fileURL)
+                return fileURL
+            } catch {
+                print("error saving file:", error)
+            }
+        }
+        return nil
     }
 }

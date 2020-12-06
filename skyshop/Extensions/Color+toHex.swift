@@ -33,14 +33,14 @@ extension Color {
             return String(format: "%06X", rgb)
         }
         
-        return "FFFFFF"
+        return ""
         
     }
     
     var hex:String {
-        let colorString = "\(self)"
-        let colorArray: [String] = colorString.components(separatedBy: " ")
-        
+        let string = "\(self)"
+
+        let colorArray: [String] = string.components(separatedBy: " ")
         if colorArray.count > 1 {
             var r: CGFloat = CGFloat((Float(colorArray[1]) ?? 1))
             var g: CGFloat = CGFloat((Float(colorArray[2]) ?? 1))
@@ -57,9 +57,13 @@ extension Color {
             // Update hex
             let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
             return String(format: "%06X", rgb)
-        }
+            
+        } else {
         
-        return "000000"
+            let lowerBound = String.Index(utf16Offset: 1, in: string)
+            let upperBound = String.Index(utf16Offset: 6, in: string)
+            return String(string[lowerBound...upperBound])
+        }
     }
     
 }

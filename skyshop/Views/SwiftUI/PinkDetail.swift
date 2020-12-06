@@ -25,6 +25,7 @@ struct PinkDetail: View {
     
     var body: some View {
         VStack{
+            
             ZStack{
                 Rectangle()
                     .frame(maxHeight: 250)
@@ -48,39 +49,55 @@ struct PinkDetail: View {
                     }.padding([.bottom, .trailing])
                 }.frame(maxHeight: 250)
             }
-                Group{
-                    HStack {
-                        Text(pink.name)
-                            .font(.system(size: 50, design: .rounded))
-                            .foregroundColor(pink.color)
-                        Spacer()
-                    }
-                    HStack {
-                        Text("#\(pink.hex)")
-                            .font(.system(.caption, design: .rounded))
-                            .foregroundColor(.primary)
-                        Spacer()
-                    }
-                }.padding(.leading)
             
-            
-                Spacer()
-                Button(action: {
-                    pinkSelectBool.toggle()
-                    pinkModel.currentColor = .pink
-                    pinkModel.deletePink(pink)
-                    pinkModel.savePinks()
-                }) {
-                    HStack {
-                        Text("Delete")
-                        Image(systemName: "trash")
-                    }.foregroundColor(pink.color)
-                    .font(.system(size: 25, design: .rounded))
-                    .ignoresSafeArea(.keyboard)
+            Group{
+                HStack {
+                    Text(pink.name)
+                        .font(.system(size: 50, design: .rounded))
+                        .foregroundColor(pink.color)
+                    Spacer()
                 }
+                HStack {
+                    Text("#\(pink.hex)")
+                        .font(.system(.caption, design: .rounded))
+                        .foregroundColor(.primary)
+                    Spacer()
+                }
+            }.padding(.leading)
+            
+            
+            Spacer()
+            
+            if let uiimage = UIImage(contentsOfFile: pink.imageURL?.path ?? "") {
+                GeometryReader { geometry in
+                    HStack{
+                        Spacer()
+                        Image(uiImage: uiimage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .clipShape(RoundedRectangle(cornerRadius: 25.0))
+                            .frame(minWidth: 0, maxWidth: geometry.size.width/1.5, minHeight: 0, maxHeight: geometry.size.width/1.5, alignment: .bottom)
+                        Spacer()
+                    }
+                }
+            }
+            
+            Button(action: {
+                pinkSelectBool.toggle()
+                pinkModel.currentColor = .pink
+                pinkModel.deletePink(pink)
+                pinkModel.savePinks()
+            }) {
+                HStack {
+                    Text("Delete")
+                    Image(systemName: "trash")
+                }.foregroundColor(pink.color)
+                .font(.system(size: 25, design: .rounded))
+                .ignoresSafeArea(.keyboard)
             }
         }
     }
+}
 
 //struct PinkDetail_Previews: PreviewProvider {
 //    static var previews: some View {

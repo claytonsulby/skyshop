@@ -40,6 +40,7 @@
 		6F0DB619257194AE00232742 /* PinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB618257194AE00232742 /* PinkRow.swift */; };
 		6F0DB62325719CC000232742 /* ColorPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB62225719CC000232742 /* ColorPickerButton.swift */; };
 		6F0DB6282571A32A00232742 /* Color+toHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DB6272571A32A00232742 /* Color+toHex.swift */; };
+		6FB66AF625786B800030B4AF /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB66AF525786B800030B4AF /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		6F0DB618257194AE00232742 /* PinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkRow.swift; sourceTree = "<group>"; };
 		6F0DB62225719CC000232742 /* ColorPickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerButton.swift; sourceTree = "<group>"; };
 		6F0DB6272571A32A00232742 /* Color+toHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+toHex.swift"; sourceTree = "<group>"; };
+		6FB66AF525786B800030B4AF /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +131,6 @@
 		6F0DB4BB256EC56E00232742 = {
 			isa = PBXGroup;
 			children = (
-				6F0DB6272571A32A00232742 /* Color+toHex.swift */,
-				6F0DB62225719CC000232742 /* ColorPickerButton.swift */,
 				6F0DB4C6256EC56E00232742 /* skyshop */,
 				6F0DB4D8256EC57000232742 /* skyshopTests */,
 				6F0DB4E3256EC57000232742 /* skyshopUITests */,
@@ -207,6 +207,7 @@
 		6F0DB5F02571616000232742 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6F0DB6272571A32A00232742 /* Color+toHex.swift */,
 				6F0DB4F5256EC66F00232742 /* Color+Hex.swift */,
 				6F0DB502256EC85B00232742 /* Color+AppColors.swift */,
 				6F0DB5EB2571604900232742 /* UIColor+toHexString.swift */,
@@ -249,6 +250,8 @@
 		6F0DB603257161DD00232742 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6F0DB62225719CC000232742 /* ColorPickerButton.swift */,
+				6FB66AF525786B800030B4AF /* ImagePickerView.swift */,
 				6F0DB524256EE3D500232742 /* HexColorPicker.swift */,
 				6F0DB4C9256EC56E00232742 /* ContentView.swift */,
 				6F0DB618257194AE00232742 /* PinkRow.swift */,
@@ -426,6 +429,7 @@
 				6F0DB4FB256EC6D700232742 /* PinkModel.swift in Sources */,
 				6F0DB518256ED32F00232742 /* View+If.swift in Sources */,
 				6F0DB52F256EF28E00232742 /* DataModel.swift in Sources */,
+				6FB66AF625786B800030B4AF /* ImagePickerView.swift in Sources */,
 				6F0DB52A256EEAE400232742 /* PinkDetail.swift in Sources */,
 				6F0DB510256ECD0C00232742 /* Pink.swift in Sources */,
 				6F0DB4F6256EC66F00232742 /* Color+Hex.swift in Sources */,

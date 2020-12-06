@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorPickerButton: View {
+struct ImagePickerView: View {
     
     @EnvironmentObject var pinkModel:PinkModel
     
@@ -23,29 +23,18 @@ struct ColorPickerButton: View {
     
     var body: some View {
         GeometryReader{ geometry in
-            HStack(alignment: .top)
+            HStack(alignment: .bottom)
             {
+                
                 Spacer()
                 Button(action: { showingPicker.toggle() }) {
                     
-                    if image == nil {
-                        HStack {
-                            Text("Choose from photo")
-                            Image(systemName: "photo")
-                            
-                        }
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 15).opacity(0.2))
-                    } else {
-                        
-                        image!
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                            .frame(width: geometry.size.width/1.5, height: geometry.size.width/1.5, alignment: .bottom)
-                        
-                        
-                    }
+                    image!
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .clipShape(RoundedRectangle(cornerRadius: 25.0))
+                        .frame(minWidth: 0, maxWidth: geometry.size.width/1.5, minHeight: 0, maxHeight: geometry.size.width/1.5, alignment: .bottom)
+
                 }
                 
                 if image == nil {

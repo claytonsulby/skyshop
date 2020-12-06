@@ -35,6 +35,12 @@ struct ContentView: View {
                         NewPinkSheet(newPinkBool: $newPinkBool, pickerColor: $pickerColor)
                     })
                 Spacer()
+                Text("← Tap to add your own!")
+                    .font(.caption)
+                    .foregroundColor(pinkModel.currentColor)
+                    .padding(.trailing)
+                    .opacity(0.5)
+                
             }
             
         }

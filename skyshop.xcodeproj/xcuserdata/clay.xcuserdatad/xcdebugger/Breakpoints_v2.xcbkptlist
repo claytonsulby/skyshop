@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "67348C7A-16C3-475C-84A9-10CD72E59E21"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "skyshop/Extensions/UIColor+toHexString.swift"
@@ -66,6 +66,214 @@
             endingLineNumber = "35"
             landmarkName = "getColorsFromPicker(pickerColor:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8343BD5C-8756-41F3-8797-25AA7FEBAACF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "skyshop/Model/PinkModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "addPink(name:hex:url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8343BD5C-8756-41F3-8797-25AA7FEBAACF - 704c6094b377a438"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "skyshop.PinkModel.addPink(name: Swift.String, hex: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "skyshop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clay/Documents/School/College/College%209th%20Semester/CMPSC%20475/additional-projects/skyshop/skyshop/Model/PinkModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2508">
+               </Location>
+               <Location
+                  uuid = "8343BD5C-8756-41F3-8797-25AA7FEBAACF - 74cc4cb6f49d5a10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (skyshop.Pink) -&gt; Swift.Bool in skyshop.PinkModel.addPink(name: Swift.String, hex: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "skyshop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clay/Documents/School/College/College%209th%20Semester/CMPSC%20475/additional-projects/skyshop/skyshop/Model/PinkModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "097E92B0-034D-4958-870B-57B549F21AE2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "skyshop/Model/PinkModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "addPink(name:hex:url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "097E92B0-034D-4958-870B-57B549F21AE2 - 704c6094b377ab21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "skyshop.PinkModel.addPink(name: Swift.String, hex: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "skyshop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clay/Documents/School/College/College%209th%20Semester/CMPSC%20475/additional-projects/skyshop/skyshop/Model/PinkModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "3320">
+               </Location>
+               <Location
+                  uuid = "097E92B0-034D-4958-870B-57B549F21AE2 - a12b4f9f9f93e907"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 (skyshop.Pink) -&gt; Swift.Bool in skyshop.PinkModel.addPink(name: Swift.String, hex: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "skyshop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clay/Documents/School/College/College%209th%20Semester/CMPSC%20475/additional-projects/skyshop/skyshop/Model/PinkModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A81269B6-5935-4B79-B75F-8EF979896ED6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "skyshop/Model/PinkModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "addPink(name:hex:url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A81269B6-5935-4B79-B75F-8EF979896ED6 - 704c6094b377aaeb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "skyshop.PinkModel.addPink(name: Swift.String, hex: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "skyshop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clay/Documents/School/College/College%209th%20Semester/CMPSC%20475/additional-projects/skyshop/skyshop/Model/PinkModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "4300">
+               </Location>
+               <Location
+                  uuid = "A81269B6-5935-4B79-B75F-8EF979896ED6 - 8d96528539623ccf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #7 (skyshop.Pink) -&gt; Swift.Bool in skyshop.PinkModel.addPink(name: Swift.String, hex: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "skyshop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clay/Documents/School/College/College%209th%20Semester/CMPSC%20475/additional-projects/skyshop/skyshop/Model/PinkModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62DE4615-7499-410A-962C-EFDA52945266"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "skyshop/Model/PinkModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "addPink(name:hex:url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8143DB80-965D-4234-AFFA-022B638DE6E3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "skyshop/Extensions/Color+toHex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "toHex(color:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "741964E9-E7F3-42F6-A649-96DA17EC05CC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "skyshop/Extensions/Color+toHex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "hex"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7323DCFF-033D-4569-BE9B-0AD18984C7F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "skyshop/Views/SwiftUI/PinkDetail.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
